@@ -1,0 +1,32 @@
+.content {
+  overscroll-behavior: contain;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex-shrink: 0;
+}
+
+.scrollArea {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}

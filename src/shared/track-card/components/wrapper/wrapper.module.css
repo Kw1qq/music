@@ -1,0 +1,7 @@
+@layer components {
+  .wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}

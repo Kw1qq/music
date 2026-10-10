@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-inline: 4px;
+  padding-block: 30px;
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  margin: 0;
+}
+
+.info {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary-color);
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}

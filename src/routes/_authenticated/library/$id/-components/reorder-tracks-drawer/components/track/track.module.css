@@ -1,0 +1,9 @@
+.card {
+  flex-grow: 2;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

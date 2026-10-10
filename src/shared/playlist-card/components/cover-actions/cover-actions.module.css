@@ -1,0 +1,50 @@
+@layer components {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius-md);
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    position: relative;
+
+    @media (hover: hover) {
+      &:hover {
+        .overlay {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .cover {
+          filter: brightness(0.5);
+        }
+      }
+    }
+  }
+
+  .overlay {
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .action {
+      color: var(--white-color);
+    }
+  }
+}

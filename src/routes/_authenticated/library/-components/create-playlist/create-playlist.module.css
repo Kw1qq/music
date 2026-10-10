@@ -1,0 +1,4 @@
+.action {
+  flex-shrink: 0;
+  --ai-bg: var(--text-alt-color)
+}

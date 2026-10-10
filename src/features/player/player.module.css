@@ -1,0 +1,27 @@
+:root {
+  --player-background-color: var(--primary-color);
+  --player-background-icon-color: var(--secondary-color);
+  --player-background-progress-bar-color: var(--text-secondary-color);
+  --player-background-progress-bar-range-color: var(--text-secondary-color);
+  --player-background-dropdown-color: var(--active-color);
+
+  --player-text-color: var(--text-color);
+  --player-text-secondary-color: var(--text-secondary-color);
+  --player-text-alt-color: var(--text-alt-color);
+}
+
+.wrapper {
+  container-type: inline-size;
+  container-name: wrapper;
+}
+
+@media (width < 500px) {
+  .wrapper {
+    bottom: 63px;
+    left: 0px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
+  }
+}

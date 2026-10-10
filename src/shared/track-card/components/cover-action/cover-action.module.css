@@ -1,0 +1,60 @@
+@layer components {
+  .button {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    --is-active: 0;
+
+    &:focus-visible {
+      .coverWrapper {
+        outline: 1px solid var(--text-color);
+        outline-offset: 3px;
+      }
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        --is-active: 1;
+      }
+    }
+  }
+
+  .icon {
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .coverWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @container style(--is-active: 1) {
+    .coverWrapper {
+      filter: brightness(0.5);
+    }
+
+    .icon {
+      opacity: 1;
+    }
+  }
+}

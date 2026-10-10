@@ -1,0 +1,11 @@
+@layer components {
+  .cover {
+    border-radius: var(--border-radius-sm);
+
+    max-width: 300px;
+    min-width: 130px;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+}

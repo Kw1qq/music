@@ -1,0 +1,5 @@
+@layer components {
+  .data {
+    align-self: stretch;
+  }
+}

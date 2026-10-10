@@ -1,0 +1,15 @@
+@layer base {
+  .scrollbar {
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+  }
+
+  @media (width < 500px) {
+    .root {
+      --scrollarea-scrollbar-size: 6px
+    }
+  }
+}

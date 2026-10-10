@@ -1,0 +1,9 @@
+@layer base {
+  .content {
+    background-color: var(--primary-color);
+  }
+
+  .header {
+    background-color: transparent;
+  }
+}

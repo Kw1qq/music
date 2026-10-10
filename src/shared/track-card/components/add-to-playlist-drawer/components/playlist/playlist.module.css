@@ -1,0 +1,27 @@
+.card {
+  padding: 5px;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  border: 2px solid transparent;
+  height: 100%;
+
+  transition: all 0.2s ease, outline-offset 0s;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--active-color);
+    }
+  }
+
+  &.selected {
+    background-color: var(--text-color);
+
+    .title {
+      color: var(--text-alt-color);
+    }
+  }
+
+  &:focus-visible {
+    outline-offset: 3px;
+  }
+}

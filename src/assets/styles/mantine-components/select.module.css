@@ -1,0 +1,19 @@
+@layer base {
+  .root {
+    width: fit-content;
+  }
+
+  .option {
+    --mantine-primary-color-filled: var(--secondary-color);
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+  }
+
+  .input {
+    user-select: none;
+  }
+}

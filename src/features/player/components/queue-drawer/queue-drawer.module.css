@@ -1,0 +1,64 @@
+.content {
+  background-color: var(--player-background-color);
+  color: var(--player-text-color);
+  border-top-left-radius: var(--border-radius-lg);
+  border-bottom-left-radius: var(--border-radius-lg);
+  height: 100dvh;
+  overscroll-behavior: contain;
+  overflow-y: hidden;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  --menu-icon-background-color: var(--player-background-progress-bar-range-color);
+  --menu-icon-color: var(--player-text-color);
+}
+
+.header {
+  flex-shrink: 0;
+
+  padding-bottom: 0px;
+  padding-top: 20px;
+  padding-inline: 20px;
+  background-color: var(--player-background-color);
+}
+
+.scrollArea {
+  flex: 1;
+}
+
+.body {
+  padding-inline: 5px;
+  padding-block: 0px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.closeButton {
+  color: var(--player-text-color);
+
+  @media (hover:hover) {
+    &:hover {
+      background-color: var(--player-background-icon-color);
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--player-text-color);
+  }
+}
+
+@media (width < 500px) {
+  .content {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .header {
+    padding-top: 0px;
+  }
+}

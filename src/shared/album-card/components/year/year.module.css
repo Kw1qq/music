@@ -1,0 +1,7 @@
+@layer components {
+  .year {
+    color: var(--text-secondary-color);
+    font-size: var(--font-size-sm);
+    margin: 0;
+  }
+}

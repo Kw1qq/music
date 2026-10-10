@@ -1,0 +1,30 @@
+@layer components {
+  .artist {
+    color: inherit;
+    display: inline;
+    margin: 0;
+  }
+
+  .link {
+    transition: all 0.2s ease;
+    text-decoration: none;
+
+    @media (hover:hover) {
+      &:hover {
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .artists {
+    color: var(--text-secondary-color);
+    font-size: var(--font-size-sm);
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+  }
+}

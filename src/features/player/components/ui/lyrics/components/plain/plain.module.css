@@ -1,0 +1,28 @@
+.plain {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  padding-top: 71px;
+}
+
+.text {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  height: 100%;
+
+  white-space: pre-line;
+  word-break: break-word;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 60%, transparent 85%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 60%, transparent 85%);
+}
+
+.showMore {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  color: var(--player-text-color);
+  z-index: 1;
+  font-weight: 600;
+}

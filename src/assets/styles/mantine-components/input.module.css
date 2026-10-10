@@ -1,0 +1,20 @@
+@layer base {
+
+  .wrapper {
+    --input-bd: var(--secondary-color);
+    --input-bg: var(--primary-color);
+    --input-color: var(--text-color);
+    border-radius: var(--border-radius-sm);
+
+    &[data-error] {
+      --input-bd: var(--mantine-color-red-9);
+      --input-color: var(--mantine-color-red-9);
+    }
+  }
+
+  .input {
+    &:focus-visible {
+      --input-bd: var(--text-color);
+    }
+  }
+}

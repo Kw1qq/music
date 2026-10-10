@@ -1,0 +1,5 @@
+@layer base {
+  .wrapper {
+    --input-bd: var(--text-secondary-color);
+  }
+}

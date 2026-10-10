@@ -1,0 +1,11 @@
+.root {
+  color: var(--player-text-secondary-color);
+}
+
+.artist {
+  @media (hover:hover) {
+    &:hover {
+      color: var(--player-text-color);
+    }
+  }
+}

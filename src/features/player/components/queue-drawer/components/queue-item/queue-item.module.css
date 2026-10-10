@@ -1,0 +1,44 @@
+.item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+
+  transition: background-color 0.2s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--player-background-icon-color);
+    }
+  }
+}
+
+.active {
+  background-color: var(--player-background-icon-color);
+}
+
+.button {
+  color: var(--player-text-color);
+  flex: 0 0 auto;
+  display: flex;
+  padding-inline: 5px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  align-self: stretch;
+  align-items: center;
+  cursor: grab;
+  touch-action: none;
+
+  &:focus-visible {
+    background-color: var(--player-background-icon-color);
+  }
+}
+
+@media (width < 500px) {
+  .button {
+    order: 2;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,12 @@
+.background {
+  --bg-color: var(--mantine-color-blue-4);
+}
+
+.header {
+  padding-block: 30px;
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  margin: 0;
+}

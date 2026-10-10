@@ -1,0 +1,57 @@
+@layer components {
+  .card {
+    background-color: var(--mantine-color-red-3);
+    background-image: url('/heart.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 800px;
+  }
+
+  .title {
+    color: var(--white-color);
+  }
+
+  .subTitle {
+    color: var(--mantine-color-red-1);
+  }
+
+  .info {
+    color: var(--mantine-color-red-1);
+    font-size: var(--font-size-sm);
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .playButton {
+    transition: background-color 0.2s ease;
+
+    &:focus-visible {
+      outline-color: var(--white-color);
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--mantine-color-red-1);
+      }
+    }
+  }
+
+  .action {
+    --ai-hover: var(--mantine-color-red-4);
+    color: var(--white-color);
+
+    &:focus-visible {
+      outline-color: var(--white-color);
+    }
+  }
+}

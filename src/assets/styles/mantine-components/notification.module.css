@@ -1,0 +1,18 @@
+@layer base {
+  .root {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    width: 320px;
+    z-index: 3;
+
+    background-color: var(--primary-color);
+    --notification-color: var(--secondary-color);
+  }
+
+  @media (width < 500px) {
+    .root {
+      bottom: 73px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.wrapper {
+  flex-grow: 2;
+  display: grid;
+  align-items: center;
+  column-gap: 15px;
+  grid-template-areas: "number-left bar number-right";
+  grid-template-columns: 35px 1fr 35px;
+}
+
+.number {
+  color: var(--player-text-color);
+  text-align: center;
+
+  &:first-child {
+    grid-area: number-left;
+  }
+
+  &:last-child {
+    grid-area: number-right;
+  }
+}

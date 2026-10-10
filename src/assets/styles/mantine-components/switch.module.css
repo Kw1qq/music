@@ -1,0 +1,12 @@
+@layer base {
+  .track {
+    --switch-bg: var(--secondary-color);
+    outline-color: var(--text-color);
+  }
+
+  .input:checked+.track {
+    --switch-bg: var(--text-color);
+    --switch-thumb-bg: var(--text-alt-color);
+    color: var(--text-color);
+  }
+}

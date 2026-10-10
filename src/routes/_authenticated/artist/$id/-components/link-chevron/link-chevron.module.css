@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  color: var(--text-color);
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.title {
+  font-size: var(--font-size-md);
+  margin-block: 10px;
+  font-weight: 600;
+}

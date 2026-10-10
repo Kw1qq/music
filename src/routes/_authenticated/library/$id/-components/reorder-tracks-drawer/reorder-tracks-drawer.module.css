@@ -1,0 +1,22 @@
+.content {
+  overscroll-behavior: contain;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex-shrink: 0;
+}
+
+.scrollArea {
+  flex: 1;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}

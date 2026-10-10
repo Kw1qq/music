@@ -1,0 +1,19 @@
+@layer components {
+  .loader {
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .button {
+    &:has(.loader) {
+      --is-active: 1;
+    }
+  }
+
+  @media (pointer: coarse) {
+    .button {
+      --is-active: 1;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.card {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 5px;
+  border-radius: var(--border-radius-sm);
+  gap: 10px;
+  flex-grow: 1;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: transparent;
+    }
+
+    .artist:hover {
+      color: var(--player-text-color);
+    }
+  }
+}
+
+.title {
+  color: var(--player-text-color);
+}
+
+.rootArtist,
+.duration {
+  color: var(--player-text-secondary-color);
+}
+
+@media (width < 400px) {
+  .duration {
+    display: none;
+  }
+}

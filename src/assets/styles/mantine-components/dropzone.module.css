@@ -1,0 +1,25 @@
+@layer base {
+  .root {
+    --dropzone-radius: var(--border-radius-sm);
+
+    background-color: var(--secondary-color);
+    border-color: var(--active-color);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--active-color);
+        border-color: var(--secondary-color);
+      }
+    }
+
+    &[data-accept] {
+      background-color: var(--mantine-color-green-4);
+      color: var(--mantine-color-green-1)
+    }
+
+    &[data-reject] {
+      background-color: var(--mantine-color-red-3);
+      color: var(--mantine-color-red-2)
+    }
+  }
+}

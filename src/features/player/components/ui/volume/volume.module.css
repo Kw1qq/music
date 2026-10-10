@@ -1,0 +1,11 @@
+.root {
+  --ai-hover: var(--player-background-icon-color);
+}
+
+.volume {
+  color: var(--player-text-color);
+}
+
+.mute {
+  color: var(--player-text-secondary-color);
+}

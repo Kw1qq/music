@@ -1,0 +1,25 @@
+@layer base {
+  .root {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    color: var(--text-color);
+
+    --ai-bg: transparent;
+    --ai-hover: var(--secondary-color);
+    transition: background 0.2s ease;
+
+    &:active {
+      transform: none;
+    }
+
+    &:focus-visible {
+      outline-color: var(--text-color);
+    }
+
+    &:disabled {
+      background: transparent;
+      opacity: 0.4;
+    }
+  }
+}

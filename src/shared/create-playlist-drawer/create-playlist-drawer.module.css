@@ -1,0 +1,43 @@
+@layer components {
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  @media (width < 400px) {
+    .wrapper {
+      flex-direction: column;
+    }
+
+    .form {
+      gap: 30px;
+    }
+
+    .name {
+      width: 100%;
+    }
+
+    .dropzone {
+      align-self: center;
+    }
+  }
+}

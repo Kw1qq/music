@@ -1,0 +1,7 @@
+.track {
+  color: var(--mantine-color-yellow-8);
+}
+
+.input:checked+.track {
+  color: var(--mantine-color-blue-4);
+}

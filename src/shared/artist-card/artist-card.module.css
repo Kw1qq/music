@@ -1,0 +1,19 @@
+@layer components {
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 15px 5px 8px;
+    border-radius: var(--border-radius-sm);
+    transition: background-color 0.2s ease;
+    color: var(--text-color);
+    text-decoration: none;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--primary-color);
+      }
+    }
+  }
+}

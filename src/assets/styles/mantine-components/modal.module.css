@@ -1,0 +1,17 @@
+@layer base {
+
+  .header,
+  .content {
+    background-color: var(--primary-color);
+  }
+
+  .close {
+    transition: all 0.2s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+  }
+}

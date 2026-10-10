@@ -1,0 +1,6 @@
+@layer components {
+  .menu {
+    align-self: flex-end;
+    color: var(--white-color);
+  }
+}

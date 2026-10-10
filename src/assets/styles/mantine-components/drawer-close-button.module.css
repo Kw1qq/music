@@ -1,0 +1,13 @@
+@layer base {
+  .close {
+    &:focus-visible {
+      outline: 1px solid var(--text-color);
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+  }
+}

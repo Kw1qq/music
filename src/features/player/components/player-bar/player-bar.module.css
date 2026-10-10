@@ -1,0 +1,87 @@
+.player {
+  display: grid;
+  grid-template-columns: minmax(600px, 1fr) minmax(auto, 1000px) 1fr;
+  gap: 20px;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+
+  border-radius: var(--border-radius-lg);
+
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  margin-inline: 14px;
+
+  color: var(--player-text-color);
+  background-color: var(--player-background-color);
+  --ai-hover: var(--player-background-icon-color);
+}
+
+.playerControls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progressBar {
+  align-self: stretch;
+}
+
+.flex {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.animateData {
+  position: relative;
+  flex-shrink: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.data {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+@media (width < 1350px) {
+  .player {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .playerControls {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  .button {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@container wrapper (width < 850px) {
+  .player {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+@container wrapper (width < 500px) {
+  .player {
+    padding: 5px 10px;
+    margin: 5px 7px;
+    gap: 15px;
+  }
+
+  .button {
+    background-color: transparent;
+    color: inherit;
+  }
+}

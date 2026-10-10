@@ -1,0 +1,29 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  transition: all 0.2s ease, outline-offset 0s;
+
+  background-color: var(--player-text-color);
+  color: var(--player-text-alt-color);
+
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+
+  &:focus-visible {
+    outline-color: var(--white-color);
+  }
+
+  @media (hover:hover) {
+    &:hover {
+      background-color: color-mix(in srgb, var(--player-text-color) 80%, transparent);
+    }
+  }
+}

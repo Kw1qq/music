@@ -1,0 +1,17 @@
+.wrapper {
+  position: relative;
+  contain: paint;
+  will-change: transform;
+  overflow-anchor: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+}

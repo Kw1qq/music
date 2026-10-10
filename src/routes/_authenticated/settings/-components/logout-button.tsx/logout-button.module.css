@@ -1,0 +1,18 @@
+.root {
+  margin-top: auto;
+  width: fit-content;
+  border-color: var(--mantine-color-red-5);
+  color: var(--mantine-color-red-5);
+
+  @media (hover:hover) {
+    &:hover {
+      background-color: color-mix(in srgb, var(--mantine-color-red-5) 10%, transparent);
+    }
+  }
+}
+
+@media (width < 500px) {
+  .root {
+    width: 100%;
+  }
+}

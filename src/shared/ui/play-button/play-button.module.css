@@ -1,0 +1,27 @@
+@layer components {
+  .button {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-radius: 50%;
+    border: none;
+    padding: 16px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+
+    outline-offset: 3px;
+
+    &:focus-visible {
+      outline: 2px solid var(--text-color);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

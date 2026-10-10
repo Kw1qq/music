@@ -1,0 +1,23 @@
+.card {
+  background-color: var(--mantine-color-blue-4);
+  background-image: url('/plate.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  grid-area: album;
+}
+
+.title {
+  color: var(--white-color);
+}
+
+.subTitle {
+  color: var(--mantine-color-blue-1);
+}
+
+@media (width < 500px) {
+  .card {
+    background-size: 60%;
+  }
+}

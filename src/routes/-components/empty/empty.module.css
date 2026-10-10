@@ -1,0 +1,9 @@
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 2;
+  gap: 10px;
+}

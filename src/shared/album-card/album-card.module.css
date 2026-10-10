@@ -1,0 +1,10 @@
+@layer components {
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,24 @@
+@layer base {
+  .track::before {
+    background-color: var(--secondary-color);
+  }
+
+  .bar {
+    background-color: var(--text-color);
+  }
+
+  .thumb {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+
+    &:focus-visible {
+      outline-color: var(--secondary-color);
+    }
+  }
+
+  .label {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-color);
+  }
+}

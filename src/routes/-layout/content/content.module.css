@@ -1,0 +1,23 @@
+.root {
+  padding: 10px 20px;
+  flex-grow: 1;
+}
+
+.content {
+  min-height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (width < 760px) {
+  .root {
+    padding: 5px 10px;
+  }
+}
+
+@media (width < 500px) {
+  .content.bar {
+    padding-bottom: 100px;
+  }
+}

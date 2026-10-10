@@ -1,0 +1,19 @@
+@layer base {
+  .dropdown {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .item {
+    &:disabled {
+      color: var(--text-secondary-color);
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+  }
+}

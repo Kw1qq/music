@@ -1,0 +1,41 @@
+.content {
+  height: 100dvh;
+  background-color: var(--player-background-color);
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  color: var(--player-text-color);
+}
+
+.scroll {
+  overflow-x: hidden;
+  background-color: var(--player-background-dropdown-color);
+  height: 100%;
+}
+
+.header {
+  flex-shrink: 0;
+  background-color: var(--player-background-color);
+}
+
+.body {
+  background: transparent;
+  height: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.title {
+  white-space: normal;
+}
+
+.close {
+  color: var(--player-text-color);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--player-background-icon-color);
+    }
+  }
+}

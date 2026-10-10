@@ -1,0 +1,30 @@
+@layer components {
+  .content {
+    overscroll-behavior: contain;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    flex-shrink: 0;
+  }
+
+  .scrollArea {
+    flex: 1;
+  }
+
+  .body {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-block: 0;
+  }
+
+
+  @media (hover: hover) {
+    .card:hover {
+      background-color: var(--active-color);
+    }
+  }
+}

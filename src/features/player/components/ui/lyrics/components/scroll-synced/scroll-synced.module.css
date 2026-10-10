@@ -1,0 +1,23 @@
+.lyrics {
+  padding-right: 20px;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.text {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--player-text-secondary-color);
+
+  white-space: normal;
+  word-break: break-word;
+
+  transform-origin: left center;
+
+  border: none;
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+  text-align: start;
+  padding: 0;
+}

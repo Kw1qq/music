@@ -1,0 +1,21 @@
+@layer base {
+  .root {
+    transition: all 0.2s ease, outline-offset 0s;
+    --button-bg: var(--text-color);
+    --button-hover: color-mix(in srgb, var(--text-color) 80%, transparent);
+    color: var(--text-alt-color);
+    outline-color: var(--text-color);
+
+    &[data-variant="outline"] {
+      border: 1px solid var(--text-color);
+      background-color: transparent;
+      color: var(--text-color);
+
+      @media (hover:hover) {
+        &:hover {
+          background-color: color-mix(in srgb, var(--text-color) 10%, transparent);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@layer base {
+  .label {
+    padding: 3px 10px 3px 10px;
+    height: auto;
+    --chip-radius: var(--border-radius-sm);
+    transition: all 0.2s ease, outline-offset 0s;
+
+    &:not([data-disabled]) {
+      background-color: var(--secondary-color);
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--active-color);
+      }
+    }
+
+    &:not([data-disabled]):where([data-checked]) {
+      background-color: var(--text-color);
+      color: var(--text-alt-color);
+    }
+  }
+
+  .input:focus+.label {
+    outline-color: var(--text-color);
+  }
+}

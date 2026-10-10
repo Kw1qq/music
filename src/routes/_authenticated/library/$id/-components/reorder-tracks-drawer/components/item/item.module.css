@@ -1,0 +1,42 @@
+.item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+
+  transition: background-color 0.2s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+}
+
+.active {
+  background-color: var(--secondary-color);
+}
+
+.button {
+  flex: 0 0 auto;
+  display: flex;
+  padding-inline: 5px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  align-self: stretch;
+  align-items: center;
+  cursor: grab;
+
+  &:focus-visible {
+    background-color: var(--secondary-color);
+  }
+}
+
+@media (width < 500px) {
+  .button {
+    order: 2;
+    padding-right: 10px;
+  }
+}

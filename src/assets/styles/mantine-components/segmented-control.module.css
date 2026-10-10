@@ -1,0 +1,14 @@
+@layer base {
+  .root {
+    background-color: var(--primary-color);
+    --sc-color: var(--secondary-color);
+  }
+
+  .input:focus-visible+.label {
+    outline: 2px solid var(--text-color);
+  }
+
+  .label[data-disabled] {
+    color: var(--text-secondary-color);
+  }
+}

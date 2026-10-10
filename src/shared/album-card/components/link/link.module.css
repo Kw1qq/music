@@ -1,0 +1,6 @@
+@layer components {
+  .link {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+}

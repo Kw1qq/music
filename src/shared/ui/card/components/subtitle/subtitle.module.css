@@ -1,0 +1,8 @@
+@layer components {
+  .subtitle {
+    max-width: 250px;
+    margin: 0;
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary-color);
+  }
+}

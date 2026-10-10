@@ -1,0 +1,6 @@
+@layer base {
+  .dropdown {
+    --popover-border-color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+}

@@ -1,0 +1,7 @@
+@layer components {
+  .data {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 2;
+  }
+}

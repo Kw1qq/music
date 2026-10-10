@@ -1,0 +1,57 @@
+@layer base {
+  .root {
+    width: fit-content;
+  }
+
+  .wrapper {
+    --input-section-color: var(--text-secondary-color);
+    --input-bg: transparent;
+    --input-bd-focus: var(--text-color)
+  }
+
+  .placeholder {
+    color: var(--text-secondary-color);
+  }
+
+  .day {
+    transition: all 0.1s ease;
+
+    &[data-selected] {
+      background-color: var(--text-color);
+      color: var(--text-alt-color);
+    }
+
+    &[data-in-range] {
+      background-color: var(--text-color);
+      color: var(--text-alt-color);
+    }
+  }
+
+
+  @media (hover:hover) {
+    .calendarHeaderLevel {
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+
+    .calendarHeaderControl {
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+
+    .day {
+      &:hover {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+      }
+    }
+
+    .monthsListControl {
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+  }
+}

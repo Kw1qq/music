@@ -1,0 +1,8 @@
+.root {
+  color: var(--player-text-color);
+  --ai-hover: var(--player-background-icon-color);
+
+  &:disabled {
+    color: var(--player-text-secondary-color);
+  }
+}

@@ -1,0 +1,46 @@
+.wrapper {
+  container-type: inline-size;
+  container-name: list;
+  min-height: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intersection {
+  height: 1px;
+  width: 100%;
+}
+
+.list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  padding-block: 20px;
+}
+
+.grid {
+  padding-block: 20px;
+}
+
+.fetching {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.item {
+  list-style: none;
+}
+
+@container list (width < 600px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+}

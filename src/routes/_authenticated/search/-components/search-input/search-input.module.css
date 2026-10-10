@@ -1,0 +1,78 @@
+.form {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  align-items: center;
+  gap: 10px;
+}
+
+.root {
+  flex-grow: 2;
+}
+
+.option {
+  padding-block: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.2s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--active-color);
+    }
+  }
+
+  &[data-combobox-selected] {
+    background-color: var(--active-color);
+  }
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.title {
+  line-height: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-color: var(--secondary-color);
+}
+
+.button {
+  font-size: 14px;
+  transition: all 0.2s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--text-secondary-color);
+    }
+  }
+}
+
+.input {
+  --input-padding-inline-start: calc(24px + 10px + 10px);
+  padding-block: 25px;
+  border-radius: var(--border-radius-md);
+}
+
+.section[data-position='right'] {
+  --section-end: 7px;
+}
+
+.section[data-position='left'] {
+  --section-start: 7px;
+}

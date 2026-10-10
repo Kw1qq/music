@@ -1,0 +1,16 @@
+@layer components {
+  .input {
+    --input-padding-inline-start: calc(24px + 7px + 10px);
+    --input-bd: var(--text-secondary-color);
+    padding-block: 25px;
+    border-radius: var(--border-radius-md);
+  }
+
+  .section[data-position='right'] {
+    --section-end: 7px;
+  }
+
+  .section[data-position='left'] {
+    --section-start: 7px;
+  }
+}

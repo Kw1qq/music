@@ -1,0 +1,6 @@
+@layer components {
+  .root {
+    color: var(--menu-icon-color);
+    --ai-hover: var(--menu-icon-background-color, var(--secondary-color));
+  }
+}

@@ -1,0 +1,8 @@
+.root {
+  --ai-hover: var(--player-background-icon-color);
+  color: var(--player-text-secondary-color);
+}
+
+.active {
+  color: var(--player-text-color);
+}

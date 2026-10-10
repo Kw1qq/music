@@ -1,0 +1,15 @@
+@layer components {
+  .card {
+    border-radius: var(--border-radius-lg);
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  @media (width < 500px) {
+    .card {
+      padding: 15px;
+    }
+  }
+}

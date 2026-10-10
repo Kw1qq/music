@@ -1,0 +1,26 @@
+.card {
+  padding: 10px;
+  flex: 0 0 220px;
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.wrapper {
+  flex-direction: column;
+}
+
+.name {
+  text-align: center;
+  font-size: var(--font-size-sm);
+}
+
+@media (width < 500px) {
+  .card {
+    flex-basis: 150px;
+  }
+}

@@ -1,0 +1,24 @@
+.lyrics {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 90%;
+  width: 100%;
+}
+
+.text {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--player-text-secondary-color);
+  padding-block: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: normal;
+  word-break: break-word;
+
+  transform-origin: center center;
+  text-align: center;
+}

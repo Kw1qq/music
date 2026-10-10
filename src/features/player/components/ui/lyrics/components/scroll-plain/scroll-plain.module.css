@@ -1,0 +1,8 @@
+.plain {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+
+  white-space: pre-line;
+  word-break: break-word;
+  width: fit-content;
+}

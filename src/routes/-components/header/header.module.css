@@ -1,0 +1,9 @@
+.container {
+  transform-origin: top;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.inner {
+  padding-block: 30px;
+}

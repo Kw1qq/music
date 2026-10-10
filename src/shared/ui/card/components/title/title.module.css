@@ -1,0 +1,6 @@
+@layer componnets {
+  .title {
+    font-size: var(--font-size-xl);
+    margin: 0;
+  }
+}
